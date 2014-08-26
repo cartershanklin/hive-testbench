@@ -53,13 +53,11 @@ queriesToRun = set([
 92,
 97,
 87,
-13,
 50,
 20,
 25,
 28,
 45,
-48,
 49,
 85,
 89,
@@ -89,7 +87,7 @@ for i in sorted(queriesToRun):
                 f.write(str(i) + "," + timeval.group(0).strip() + "\n")
         else:
                 f.write(str(i) + ",0\n")
-
+		f.flush()
 f.close()
 
 
