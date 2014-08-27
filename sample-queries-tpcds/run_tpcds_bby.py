@@ -82,7 +82,7 @@ for i in sorted(queriesToRun):
         (out, err) = proc.communicate()
         print "-------------------"
         print "stderr of command: " + err
-        timeval = re.search('(?<=taken:)\W\d\d\D\d\d',err)
+        timeval = re.search('(?<=taken:)\W\d\d\D\d\d.',err)
         if timeval:
                 f.write(str(i) + "," + timeval.group(0).strip() + "\n")
         else:
