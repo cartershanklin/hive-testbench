@@ -15,7 +15,7 @@ print "Executing TPC DS benchmark for Hive... "
 # Note: the lines below do not exist and need to be added
 # Note: the number is the scale factor specified setup script
 #1.    use tpcds_bin_partitioned_orc_30000; 
-#2.    tez.queue.name=apps
+#2.    set tez.queue.name=apps;
 # Note: the lines below exist already and need to be modified
 #3.    set hive.tez.container.size=8192; 
 #4.    set hive.tez.java.opts=-Xmx7680m;
