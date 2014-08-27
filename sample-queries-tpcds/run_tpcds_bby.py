@@ -85,10 +85,9 @@ for i in sorted(queriesToRun):
         timeval = re.search('(?<=taken:)\W.*',err)
         if timeval:
                 f.write(str(i) + "," + timeval.group(0).strip() + "\n")
-                f.flush()
         else:
                 f.write(str(i) + ",0\n")
-		f.flush()
+	f.flush()
 f.close()
 
 
