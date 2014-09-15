@@ -81,6 +81,10 @@ All of these steps should be carried out on your Hadoop cluster.
   	hive> source tpch_query1.sql;
   	```
 
+  There is an example execution script for the TPC-DS execution located here:
+  https://github.com/dr-riz/hive-testbench/blob/master/sample-queries-tpcds/run_tpcds_bby.py
+  
+
 Feedback
 ========
 
