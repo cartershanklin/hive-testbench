@@ -47,15 +47,15 @@ All of these steps should be carried out on your Hadoop cluster.
 
   Some examples:
 
-  Build 1 TB of TPC-DS data: ```./tpcds-setup 1000```
+  Build 1 TB of TPC-DS data: ```./tpcds-setup.sh 1000```
 
-  Build 1 TB of TPC-H data: ```./tpch-setup 1000```
+  Build 1 TB of TPC-H data: ```./tpch-setup.sh 1000```
 
-  Build 100 TB of TPC-DS data: ```./tpcds-setup 100000```
+  Build 100 TB of TPC-DS data: ```./tpcds-setup.sh 100000```
 
-  Build 30 TB of text formatted TPC-DS data: ```FORMAT=textfile ./tpcds-setup 30000```
+  Build 30 TB of text formatted TPC-DS data: ```FORMAT=textfile ./tpcds-setup.sh 30000```
 
-  Build 30 TB of RCFile formatted TPC-DS data: ```FORMAT=rcfile ./tpcds-setup 30000```
+  Build 30 TB of RCFile formatted TPC-DS data: ```FORMAT=rcfile ./tpcds-setup.sh 30000```
 
 - Step 6: Run queries.
 
@@ -80,6 +80,10 @@ All of these steps should be carried out on your Hadoop cluster.
   	hive> use tpch_bin_partitioned_orc_1000;
   	hive> source tpch_query1.sql;
   	```
+
+  There is an example execution script for the TPC-DS execution located here:
+  https://github.com/dr-riz/hive-testbench/blob/master/sample-queries-tpcds/run_tpcds_bby.py
+  
 
 Feedback
 ========
